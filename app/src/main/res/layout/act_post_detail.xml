@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+        xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+                name="post"
+                type="com.sr.sample.beans.PostBean"/>
+    </data>
+    <LinearLayout
+            android:orientation="vertical"
+            style="@style/RootLayout">
+
+        <TextView
+
+                android:layout_width="match_parent"
+                android:layout_height="?actionBarSize"
+                tools:text="Title"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:text="@{post.title}"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:gravity="center"
+                android:textColor="@color/black"/>
+
+        <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:text="Title"
+                android:padding="20dp"
+                android:textSize="16sp"
+                android:text="@{post.body}"
+                android:fontFamily="sans-serif-condensed"
+                android:textColor="@color/black"/>
+    </LinearLayout>
+</layout>
